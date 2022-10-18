@@ -1,0 +1,11 @@
+The quick brown fox jumps over the lazy dog.
+The dog ran on the dog.
+A car drove under any car.
+Some girl drove to a dog.
+The boy drove over any boy.
+The town walked over some girl.
+The town drove from a town.
+Any town skipped from some car.
+Any girl ran to some car.
+Any car skipped on any girl.
+Some boy skipped from a girl. 
