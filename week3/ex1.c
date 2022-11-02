@@ -88,7 +88,7 @@ void Insert(){
     printf("Enter Name Phone email\n");
     scanf("\n");
     char name[256], phone[256], email[256];
-    scanf("%s %s %s",&name,&phone,&email);
+    scanf("%s %s %s",name,phone,email);
     char c;
     printf("(H)ead or (T)ail ?\n");
     scanf("\n");
