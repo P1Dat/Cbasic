@@ -13,12 +13,12 @@ int main(){
     {
         scanf("%c",&c);
         push(c,&s);
-        length++;
     }
     while(!empty(s))
     {
         Eltype e = pop(&s);
-        printf("%c",e);
+        if(c!='\n')
+            printf("%c",e);
     }
     return 0;
 }
