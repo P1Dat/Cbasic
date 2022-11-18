@@ -26,6 +26,6 @@ ElementType DeQueue(Queue *pQ){
         initialize(pQ);
         return retVal;
     }
-    else printf("Queue empty!");\
+    else printf("Queue empty!");
     exit(-1);
 }
