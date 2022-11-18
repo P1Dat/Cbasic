@@ -5,9 +5,10 @@ nó.*/
 #include <stdio.h>
 #include "stack.h"
 int main(){
-    int i = 0 , length = 0;
     StackType s;
     initialize(&s);
+    printf("Enter string:\n");
+    fflush(stdin);
     char c='\0';
     while(c!='\n')
     {
@@ -17,7 +18,7 @@ int main(){
     while(!empty(s))
     {
         Eltype e = pop(&s);
-        if(c!='\n')
+        if(e!='\n')
             printf("%c",e);
     }
     return 0;
