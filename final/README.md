@@ -1,11 +1,11 @@
 # How to use library
 To run the program:
-Step 1: translate .c files into .o files with the following command:
+Step 1: translate `.c` files into `.o` files with the following command:
 ```sh
   gcc -c list.c
   gcc -c main.c
 ```
-Step 2: Link the .o files to create a test file
+Step 2: Link the `.o` files to create a test file
 ```sh
   gcc -o test llist.o main.o
 ```
@@ -63,9 +63,9 @@ typedef struct node_t {
 
 # Make file
 
-If you need to link too many files .o, makefile will be very useful
+If you need to link too many files `.o`, makefile will be very useful
 
-Example, if I want translate .c files into .o:
+Example, if I want translate `.c` files into `.o`:
 ```sh
 test.o: test.c bst.h
 	gcc -c test.c
@@ -74,13 +74,13 @@ bst.o: bst.c bst.h
 	gcc -c bst.c
 ```
 
-Then, we need link all of files .o
+Then, we need link all of files `.o`
 ```sh
 test: test.o bst.o
 	gcc -o test test.o bst.o
 ```
 
-So we have a makefile.mak
+So we have a `makefile.mak`
 ```sh
 test: test.o bst.o
 	gcc -o test test.o bst.o
