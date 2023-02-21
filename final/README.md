@@ -47,3 +47,16 @@ typedef struct data_s{
 - You use `key_t` (a data type) to create the tree
 - If your key is a string, comparison operators `== > < >= <=` will be replaced by using `strcmp()` fuction and assignment operator will be replaced by using `strcpy()` fuction
 - In `typedef struct data_s` you can add some fields, like: `char StudentofName[11]`
+
+# Hash Table
+- Use Separate Chaining Collision Handling Technique
+- The size Hash Table is 13, you can change at the command `#define TABLE_SIZE (13)` in hash.h
+- Change the element type in hash.h:
+```sh
+typedef struct node_t {
+  char key[MAX_CHAR];
+  /* other fields */
+  char word[50];
+  struct node_t* next;
+} element_t;  
+```
