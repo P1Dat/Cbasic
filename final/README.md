@@ -60,3 +60,37 @@ typedef struct node_t {
   struct node_t* next;
 } element_t;  
 ```
+
+#Make file
+
+If you need to link too many files .o, makefile will be very useful
+
+Example, if I want translate .c files into .o:
+```sh
+test.o: test.c bst.h
+	gcc -c test.c
+
+bst.o: bst.c bst.h
+	gcc -c bst.c
+```
+
+Then, we need link all of files .o
+```sh
+test: test.o bst.o
+	gcc -o test test.o bst.o
+```
+
+So we have a makefile.mak
+```sh
+test: test.o bst.o
+	gcc -o test test.o bst.o
+
+test.o: test.c bst.h
+	gcc -c test.c
+
+bst.o: bst.c bst.h
+	gcc -c bst.c
+```
+> NOTE: you have to use `tab` not `space` !
+
+Now, you just use `make` in cmd, and use `.\test` to run program
