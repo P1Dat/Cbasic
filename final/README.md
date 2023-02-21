@@ -6,7 +6,7 @@ Step 1: translate .c files into .o files with the following command:
 ```
 Step 2: Link the .o files to create a test file
 ```sh
-  gcc -o test llist.o llmain.o
+  gcc -o test llist.o main.o
 ```
 
 You can change data types in the struct:
