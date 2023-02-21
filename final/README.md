@@ -9,6 +9,7 @@ Step 2: Link the .o files to create a test file
 ```sh
   gcc -o test llist.o main.o
 ```
+> Note: `test` is the file to run: `.\test`
 
 # Link list
 You can change data types in the struct:
@@ -24,7 +25,14 @@ typedef struct data_s{
 
 # Queue and Stack
 
-install by link list
+Queue and Stack are installed by link list, you need link with llist.o
+```sh
+  gcc -o test queue.o llist.o main.o
+```
+or
+```sh
+  gcc -o test stack.o llist.o main.o
+```
 
 # BST
 
