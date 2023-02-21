@@ -17,3 +17,4 @@ typedef struct data_s{
 } data_t;
 ```
 > Note: in `typedef struct data_s` you can add some fields, like: `char StudentofName[11]`
+> You need edit `ShowData()` function for new data types
