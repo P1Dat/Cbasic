@@ -29,13 +29,13 @@ root_t llPrint(root_t root) {
 /* === Insert ============================================== */
 
 root_t llInsertHead(root_t root, const data_t data) {
-    node_t* pNewNode = createNewNode(data);
+    node_t* pNewNode = llCreateNewNode(data);
     pNewNode->next = root;
   return (root_t)pNewNode;
 }
 
 root_t llInsertTail(root_t root, const data_t data) {
-    node_t* pNewNode = createNewNode(data);
+    node_t* pNewNode = llCreateNewNode(data);
 
     if (root == NULL) return (root_t)pNewNode;
 
@@ -49,7 +49,7 @@ root_t llInsertTail(root_t root, const data_t data) {
 root_t llInsertAfter(root_t root, node_t* prev_node, const data_t data) {
     if (prev_node == NULL) return root;
 
-    node_t* pNewNode = createNewNode(data);
+    node_t* pNewNode = llCreateNewNode(data);
     pNewNode->next = prev_node->next;
     prev_node->next = pNewNode;
 
