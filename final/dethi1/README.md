@@ -1,0 +1,2 @@
+# Task 9
+Trong `task9()`, chúng ta sử dụng hàm `mktime` để chuyển đổi thông tin ngày tháng năm giờ phút giây trong đầu vào một và hai sang một giá trị `timestamp`, rồi tính số giây trôi qua giữa hai `timestamp` đó bằng hàm `difftime`. Cuối cùng, chúng ta chia cho số giây trong một ngày để tính ra số đêm trôi qua. Lưu ý rằng khi chia số giây cho số ngày, kết quả sẽ là một số nguyên, do đó chúng ta không cần phải làm tròn kết quả.
