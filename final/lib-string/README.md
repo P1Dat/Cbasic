@@ -1,6 +1,6 @@
 # lib-string
 
-Libraries are enhanced by using `string` variables as `keys`
+Libraries are enhanced by using `string` variables as `keys` ---- `ver 2.0`
 
 ## llist.h
 
