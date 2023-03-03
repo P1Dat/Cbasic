@@ -28,7 +28,7 @@ root_t dllPrint(root_t root) {
 
 //============================Insert==========================
 root_t dllInsertHead(root_t pHead, data_t data){
-    node_t* pNewNode = createNewNode(data);
+    node_t* pNewNode = dllCreateNewNode(data);
     if (pHead == NULL) return (root_t)pNewNode;
     pHead->prev = pNewNode;
     pNewNode->next = pHead;
@@ -36,7 +36,7 @@ root_t dllInsertHead(root_t pHead, data_t data){
 }
 
 root_t dllInsertTail(root_t root, data_t data){
-    node_t* pNewNode = createNewNode(data);
+    node_t* pNewNode = dllCreateNewNode(data);
     if (root == NULL) return (root_t)pNewNode;
     node_t* p = NULL;
     for (p = root; p->next != NULL; p = p->next) ;
@@ -46,7 +46,7 @@ root_t dllInsertTail(root_t root, data_t data){
 }
 
 root_t dllInsertAfter(root_t root, node_t *pAElem, data_t data){
-    node_t* pNewNode = createNewNode(data);
+    node_t* pNewNode = dllCreateNewNode(data);
     if (pAElem == NULL) return root;
     pNewNode->prev = pAElem;
     pNewNode->next = pAElem->next;
@@ -57,7 +57,7 @@ root_t dllInsertAfter(root_t root, node_t *pAElem, data_t data){
 }
 
 root_t dllInsertBefore(root_t root, node_t *pAElem, data_t data){
-    node_t* pNewNode = createNewNode(data);
+    node_t* pNewNode = dllCreateNewNode(data);
     if (pAElem == NULL) return root;
     pNewNode->next = pAElem;
     pNewNode->prev = pAElem->prev;
