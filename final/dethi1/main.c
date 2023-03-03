@@ -169,8 +169,8 @@ int task1(){
     fscanf(f, "%s",newData.number);
     fscanf(f, "%d",&newData.type);
     park[n++] = newData;
-    position = n;
   }
+  position = n; //Vi tri du lieu cuoi cung nhap tu file log_input.txt
   fclose(f);
   printf("Du lieu da nhap:\n");
   showLog();
