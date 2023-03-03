@@ -3,9 +3,9 @@
 
 
 //=========Select lib=======
-#include "bst.h"
-#include "llist.h"
-#include "hash.h"
+// #include "bst.h"
+// #include "llist.h"
+// #include "hash.h"
 
 
 void task1(){
