@@ -22,8 +22,8 @@ tree_t Search(key_t x, tree_t Root);
 void Insertnode_t(key_t x, tree_t *pRoot);
 key_t DeleteMin(tree_t *Root);
 
-key_t findMin(tree_t *Root);
-key_t findMax(tree_t *Root);
+tree_t findMin(tree_t *Root);
+tree_t findMax(tree_t *Root);
 
 void Deletenode_t(key_t x, tree_t *Root);
 
