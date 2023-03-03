@@ -50,7 +50,7 @@ key_t DeleteMin(tree_t *Root) {
     return DeleteMin(&(*Root)->left);
 }
 
-key_t findMin(tree_t *Root){
+tree_t findMin(tree_t *Root){
     key_t k;
     if (*Root==NULL) return NULL;
     else{
@@ -59,12 +59,12 @@ key_t findMin(tree_t *Root){
     }
 }
 
-key_t findMax(tree_t *Root){
+tree_t findMax(tree_t *Root){
     key_t k;
     if (*Root==NULL) return NULL;
     else{
         if((*Root)->right==NULL) return &(*Root);
-        else return(findMin((*Root)->right));
+        else return(findMax((*Root)->right));
     }
 }
 
