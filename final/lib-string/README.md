@@ -236,7 +236,7 @@ In makefile.mak, you can set up follow:
 
 ```sh
 main: test.o lib.o
-	gcc -o a test.o lib.o
+	gcc -o a.exe test.o lib.o
 
 test.o: test.c lib.h
 	gcc -c test.c
