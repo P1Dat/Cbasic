@@ -12,7 +12,7 @@
 data_t* arr ;
 
 //Khai bao hash table
-element_t* ht[TABLE_SIZE];//--------> HASH TABLE !
+// element_t* ht[TABLE_SIZE];//--------> HASH TABLE !
 
 int main(){
 
